@@ -4,6 +4,8 @@ import Prerna from "../assets/Prerna.jpeg"
 import Aditya from "../assets/Aditya.jpeg"
 import V from "../assets/vyshnavi.jpeg"
 import D from "../assets/Danush.png"
+import k from "../assets/Karthik.jpeg"
+import Pr from "../assets/Pravitha.jpeg"
 
 const organizers = [
   {
@@ -34,7 +36,7 @@ const organizers = [
   {
     name: "Karthik",
     role: "Public Relations",
-    image: ""
+    image: k
   },
   {
     name: "Deeksha",
@@ -44,7 +46,7 @@ const organizers = [
   {
     name: "Pravitha",
     role: "Public Relations",
-    image:" {Pritam}"
+    image: Pr
   },
 ];
 
