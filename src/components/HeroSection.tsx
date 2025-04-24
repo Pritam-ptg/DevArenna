@@ -1,41 +1,64 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
-
-  const [countdownElements, setCountdownElements] = React.useState([]);
-
-  const currentDate = new Date();
-  const eventDate = new Date("2025-05-14T00:00:00Z");
-  const timeDifference = eventDate.getTime() - currentDate.getTime();
-  const daysLeft = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  const hoursLeft = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutesLeft = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-  const secondsLeft = Math.floor((timeDifference % (1000 * 60)) / 1000);
-  const countdown = {
-    days: daysLeft,
-    hours: hoursLeft,
-    minutes: minutesLeft,
-    seconds: secondsLeft
-  };
+  const [tick, setTick] = useState(0);
+  
+  const countdownRef = useRef({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+  
+  const countdownElements = useRef([
+    { label: 'Days', value: 0 },
+    { label: 'Hours', value: 0 },
+    { label: 'Minutes', value: 0 },
+    { label: 'Seconds', value: 0 }
+  ]);
 
   useEffect(() => {
-    setCountdownElements(prev=>[
-      { label: 'Days', value: countdown.days },
-      { label: 'Hours', value: countdown.hours },
-      { label: 'Minutes', value: countdown.minutes },
-      { label: 'Seconds', value: countdown.seconds }
-    ]);
-  },[])
-
-  setInterval(() => {
-    setCountdownElements(prev=>[
-      { label: 'Days', value: countdown.days },
-      { label: 'Hours', value: countdown.hours },
-      { label: 'Minutes', value: countdown.minutes },
-      { label: 'Seconds', value: countdown.seconds }
-    ])
-  }, 1000)
+    // Update function that recalculates time and updates refs
+    const updateCountdown = () => {
+      const currentDate = new Date();
+      const eventDate = new Date("2025-05-14T00:00:00Z");
+      const timeDifference = eventDate.getTime() - currentDate.getTime();
+      
+      const daysLeft = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hoursLeft = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutesLeft = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const secondsLeft = Math.floor((timeDifference % (1000 * 60)) / 1000);
+      
+      // Update the countdown ref
+      countdownRef.current = {
+        days: daysLeft,
+        hours: hoursLeft,
+        minutes: minutesLeft,
+        seconds: secondsLeft
+      };
+      
+      // Update the elements ref
+      countdownElements.current = [
+        { label: 'Days', value: daysLeft },
+        { label: 'Hours', value: hoursLeft },
+        { label: 'Minutes', value: minutesLeft },
+        { label: 'Seconds', value: secondsLeft }
+      ];
+      
+      // Force re-render
+      setTick(prev => prev + 1);
+    };
+    
+    // Initial update
+    updateCountdown();
+    
+    // Set up the interval
+    const intervalId = setInterval(updateCountdown, 1000);
+    
+    // Clean up
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <section className="min-h-screen font-squid bg-black text-white relative overflow-hidden flex items-center justify-center antialiased">
@@ -69,7 +92,7 @@ const HeroSection = () => {
             MozOsxFontSmoothing: "grayscale"
           }}
         >
-          DEV-ARENA 2025
+          DEVARENA 2025
         </h1>
 
           <p className="text-xl md:text-2xl text-white/80 mb-8 tracking-wide">
@@ -78,18 +101,16 @@ const HeroSection = () => {
         </div>
         
         {/* Countdown Timer */}
-        <div className="flex justify-center space-x-4 mb-10">
-          {countdownElements.map((item, index) => (
-
+        <div className="flex flex-wrap justify-center gap-3 mb-10 px-2">
+          {countdownElements.current.map((item, index) => (
             <div 
               key={index} 
-              className="bg-[#080808] border border-pink-600/30 rounded-lg p-4 text-center min-w-[100px] shadow-sm"
+              className="bg-[#080808] border border-pink-600/30 rounded-lg p-2 sm:p-4 text-center shadow-sm flex-grow flex-shrink-0 max-w-[90px] sm:max-w-[120px]"
             >
-              <span className="text-4xl font-bold text-pink-500 tracking-tighter">
-                {/* {index === 0 ? item.value : 0} */}
+              <span className="text-2xl sm:text-4xl font-bold text-pink-500 tracking-tighter">
                 {item.value}
               </span>
-              <p className="text-sm text-white/60 tracking-wider">{item.label}</p>
+              <p className="text-xs sm:text-sm text-white/60 tracking-wider">{item.label}</p>
             </div>
           ))}
         </div>
