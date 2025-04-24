@@ -1,7 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
+
+  const [countdownElements, setCountdownElements] = React.useState([]);
+
+  const currentDate = new Date();
+  const eventDate = new Date("2025-05-14T00:00:00Z");
+  const timeDifference = eventDate.getTime() - currentDate.getTime();
+  const daysLeft = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const hoursLeft = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutesLeft = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  const secondsLeft = Math.floor((timeDifference % (1000 * 60)) / 1000);
+  const countdown = {
+    days: daysLeft,
+    hours: hoursLeft,
+    minutes: minutesLeft,
+    seconds: secondsLeft
+  };
+
+  useEffect(() => {
+    setCountdownElements(prev=>[
+      { label: 'Days', value: countdown.days },
+      { label: 'Hours', value: countdown.hours },
+      { label: 'Minutes', value: countdown.minutes },
+      { label: 'Seconds', value: countdown.seconds }
+    ]);
+  },[])
+
+  setInterval(() => {
+    setCountdownElements(prev=>[
+      { label: 'Days', value: countdown.days },
+      { label: 'Hours', value: countdown.hours },
+      { label: 'Minutes', value: countdown.minutes },
+      { label: 'Seconds', value: countdown.seconds }
+    ])
+  }, 5000)
+
   return (
     <section className="min-h-screen font-squid bg-black text-white relative overflow-hidden flex items-center justify-center antialiased">
       {/* Gradient background */}
@@ -44,7 +79,20 @@ const HeroSection = () => {
         
         {/* Countdown Timer */}
         <div className="flex justify-center space-x-4 mb-10">
-          {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, index) => (
+          {countdownElements.map((item, index) => (
+
+            <div 
+              key={index} 
+              className="bg-[#080808] border border-pink-600/30 rounded-lg p-4 text-center min-w-[100px] shadow-sm"
+            >
+              <span className="text-4xl font-bold text-pink-500 tracking-tighter">
+                {/* {index === 0 ? item.value : 0} */}
+                {item.value}
+              </span>
+              <p className="text-sm text-white/60 tracking-wider">{item.label}</p>
+            </div>
+          ))}
+          {/* {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, index) => (
             <div 
               key={label} 
               className="bg-[#080808] border border-pink-600/30 rounded-lg p-4 text-center min-w-[100px] shadow-sm"
@@ -54,13 +102,13 @@ const HeroSection = () => {
               </span>
               <p className="text-sm text-white/60 tracking-wider">{label}</p>
             </div>
-          ))}
+          ))} */}
         </div>
         
         {/* Action Buttons */}
         <div className="flex justify-center space-x-4">
           <a 
-            href="#register" 
+            href="https://lu.ma/0hrz9481" 
             className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-lg transition-colors duration-300 font-medium tracking-wider"
           >
             REGISTER NOW
