@@ -35,7 +35,7 @@ const HeroSection = () => {
       { label: 'Minutes', value: countdown.minutes },
       { label: 'Seconds', value: countdown.seconds }
     ])
-  }, 5000)
+  }, 1000)
 
   return (
     <section className="min-h-screen font-squid bg-black text-white relative overflow-hidden flex items-center justify-center antialiased">
@@ -92,17 +92,6 @@ const HeroSection = () => {
               <p className="text-sm text-white/60 tracking-wider">{item.label}</p>
             </div>
           ))}
-          {/* {['Days', 'Hours', 'Minutes', 'Seconds'].map((label, index) => (
-            <div 
-              key={label} 
-              className="bg-[#080808] border border-pink-600/30 rounded-lg p-4 text-center min-w-[100px] shadow-sm"
-            >
-              <span className="text-4xl font-bold text-pink-500 tracking-tighter">
-                {index === 0 ? 92 : 0}
-              </span>
-              <p className="text-sm text-white/60 tracking-wider">{label}</p>
-            </div>
-          ))} */}
         </div>
         
         {/* Action Buttons */}
