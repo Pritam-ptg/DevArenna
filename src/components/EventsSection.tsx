@@ -38,7 +38,7 @@ const EventsSection = () => {
     },
     {
       id: 3,
-      title: "54 Cards",
+      title: "Game of Cards",
       day: 1,
       icon: <Dice1 className="h-6 w-6" />,
       description: "A strategic card game that tests your memory, pattern recognition, and decision-making under pressure. Every card matters in this mental battleground.",
@@ -56,7 +56,7 @@ const EventsSection = () => {
     },
     {
       id: 5,
-      title: "Reva's Got Talent",
+      title: "Reva's Got Latent",
       day: 2,
       icon: <Star className="h-6 w-6" />,
       description: "The ultimate talent showcase where participants bring their most spectacular skills to win over our judges and audience. What's your winning talent?",
@@ -74,20 +74,21 @@ const EventsSection = () => {
     },
     {
       id: 7,
-      title: "Human Tic Tac Toe",
-      day: 3,
-      icon: <LayoutGrid className="h-6 w-6" />,
-      description: "A life-sized, high-stakes version of the classic game where strategy meets physical challenge. Think fast, move faster, and outmaneuver your opponents.",
-      color: "championGold",
-      time: "09:00 AM - 11:00 AM",
-    },
-    {
-      id: 8,
       title: "Code Frenzy",
       day: 3,
       icon: <Bug className="h-6 w-6" />,
       description: "A high-octane coding competition where speed meets precision. Solve complex algorithms and programming challenges against the clock and against each other.",
       color: "squidPink",
+      time: "09:00 AM - 11:00 AM",
+    },
+    {
+      id: 8,
+      
+      title: "Vibe Coding",
+      day: 3,
+      icon: <LayoutGrid className="h-6 w-6" />,
+      description: "A life-sized, high-stakes version of the classic game where strategy meets physical challenge. Think fast, move faster, and outmaneuver your opponents.",
+      color: "championGold",
       time: "11:30 AM - 01:30 PM",
     },
     {

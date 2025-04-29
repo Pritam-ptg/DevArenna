@@ -16,17 +16,17 @@ const faqs: FaqItem[] = [
   },
   {
     question: "What are the prizes for winners?",
-    answer: "Top performers will receive cash prizes, trophies, and exclusive merchandise. The total prize pool is valued at ₹1,00,000 with additional sponsor goodies.",
+    answer: "Top performers will receive cash prizes and certificates. The total prize pool is valued at ₹15,000+.",
     icon: <Trophy className="h-5 w-5 text-championGold" />,
   },
   {
     question: "How can we register for the event?",
-    answer: "Registration is open on our website. Click on the 'Register' button and fill out the form. The registration fee is ₹500 per person for the entire event.",
+    answer: "Registration is open on our website. Click on the 'Register' button and fill out the form. The registration fee is ₹30 per team for per game in Day 1 and 3 event. Reva's Got Latent Got no Registration fee.",
     icon: <CalendarCheck className="h-5 w-5 text-squidGreen" />,
   },
   {
     question: "Can non-students attend the event?",
-    answer: "Yes, non-students can attend as spectators. There will be a separate registration for spectators at a nominal fee of ₹200.",
+    answer: "Yes, There are non tech / semi tech Events in Day 1 and 2.",
     icon: <UserPlus className="h-5 w-5 text-squidPink" />,
   },
   {
@@ -34,14 +34,14 @@ const faqs: FaqItem[] = [
     answer: "There's no strict dress code, but we recommend comfortable attire for technical events. For cultural events, you can dress according to your performance theme.",
     icon: <Shirt className="h-5 w-5 text-squidGreen" />,
   },
-  {
-    question: "Will food and accommodation be provided?",
-    answer: "Light refreshments will be provided during the events. For accommodation, we have tie-ups with nearby hostels and hotels at discounted rates for participants.",
-    icon: <Coffee className="h-5 w-5 text-championGold" />,
-  },
+  // {
+  //   question: "Will food and accommodation be provided?",
+  //   answer: "Light refreshments will be provided during the events. For accommodation, we have tie-ups with nearby hostels and hotels at discounted rates for participants.",
+  //   icon: <Coffee className="h-5 w-5 text-championGold" />,
+  // },
   {
     question: "Are team events allowed or solo only?",
-    answer: "Both team and solo events are available. Team sizes vary from 2-5 members depending on the event. Check individual event details for specific requirements.",
+    answer: "Both team and solo events are available. Team sizes vary from 2-4 members depending on the event. Check individual event details for specific requirements.",
     icon: <Users className="h-5 w-5 text-squidPink" />,
   },
   {
@@ -49,11 +49,11 @@ const faqs: FaqItem[] = [
     answer: "All events will be held at the Reva University campus. Detailed venue information for each event will be shared with registered participants.",
     icon: <MapPin className="h-5 w-5 text-squidGreen" />,
   },
-  {
-    question: "Can alumni participate?",
-    answer: "Yes, alumni can participate in specific events marked as 'Open'. These events will be highlighted on our event schedule page.",
-    icon: <GraduationCap className="h-5 w-5 text-championGold" />,
-  },
+  // {
+  //   question: "Can alumni participate?",
+  //   answer: "Yes, alumni can participate in specific events marked as 'Open'. These events will be highlighted on our event schedule page.",
+  //   icon: <GraduationCap className="h-5 w-5 text-championGold" />,
+  // },
   {
     question: "What's the last date to register?",
     answer: "Online registration closes 3 days before the event. Limited on-spot registrations will be available on a first-come, first-served basis.",

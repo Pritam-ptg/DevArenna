@@ -1,11 +1,12 @@
 
 import { cn } from "@/lib/utils";
 import Innoknowvew from "../assets/Innoknowvex.jpeg"
+import CommingSoon from "../assets/ComingSoon.png"
 
 const sponsors = [
   {
-    name: "TechCorp",
-    logo: "https://via.placeholder.com/150?text=TechCorp",
+    name: "Coming Soon",
+    logo: `${CommingSoon}`,
     tier: "platinum"
   },
   {
@@ -14,8 +15,8 @@ const sponsors = [
     tier: "gold"
   },
   {
-    name: "FutureWave",
-    logo: "https://via.placeholder.com/150?text=FutureWave",
+    name: "Coming Soon",
+    logo: `${CommingSoon}`,
     tier: "silver"
   }
 ];

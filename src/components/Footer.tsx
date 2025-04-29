@@ -15,16 +15,16 @@ const Footer = () => {
               The ultimate test of skill, strategy, and survival. Do you have what it takes to emerge victorious?
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
+              {/* <a href="#" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
                 <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
+              </a> */}
+              <a href="https://x.com/Pritam_P20" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
+              <a href="https://www.instagram.com/dev.track" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
+              <a href="https://www.linkedin.com/company/dev-track" className="w-10 h-10 rounded-full bg-darkAccent/50 border border-white/10 flex items-center justify-center text-white/80 hover:text-squidPink hover:border-squidPink transition-colors duration-300">
                 <Linkedin size={18} />
               </a>
             </div>
@@ -56,11 +56,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="mr-3 text-squidPink mt-1" size={18} />
-                <span className="text-white/70">event@mycollege.com</span>
+                <span className="text-white/70">crypticnodmand@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <Phone className="mr-3 text-squidPink mt-1" size={18} />
-                <span className="text-white/70">+91-9876543210</span>
+                <span className="text-white/70">+91-7972121969</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 text-squidPink mt-1" size={18} />

@@ -7,47 +7,68 @@ import D from "../assets/Danush.png"
 import k from "../assets/Karthik.jpeg"
 import Pr from "../assets/Pravitha.jpeg"
 import Deeksa from "../assets/Deekha.jpeg"
+import CommignSoon from "../assets/ComingSoon.png"
 
 const organizers = [
   {
     name: "Pritam",
     role: "Technical Lead",
-    image: Pritam
+    image: Pritam,
+    linkedIn: "https://www.linkedin.com/in/pritam-p-012561253/"
   },
   {
     name: "Prerna",
     role: "PR Lead",
-    image: Prerna
+    image: Prerna,
+    linkedIn: "https://www.linkedin.com/in/prerna-logachandran-b10a57249/"
   },
   {
     name: "Aaditya Gowda",
     role: "Event/Media mangement Lead",
-    image: Aditya
+    image: Aditya,
+    linkedIn: "https://www.linkedin.com/in/aaditya-gowda-a9b328298/"
   },
   {
     name: "Vyishnavi",
     role: "Marketing Head",
-    image: V
+    image: V,
+    linkedIn: "#"
   },
   {
     name: "Danush",
     role: "Design Lead",
-    image: D
+    image: D,
+    linkedIn: "#"
   },
   {
     name: "Karthik",
     role: "Public Relations",
-    image: k
+    image: k,
+    linkedIn: "https://www.linkedin.com/in/kartikjarali/"
   },
   {
     name: "Deeksha",
     role: "Public Relations",
-    image:Deeksa
+    image:Deeksa,
+    linkedIn: "https://www.linkedin.com/in/deeksha-shetti-51b9362a3/"
   },
   {
     name: "Pravitha",
     role: "Public Relations",
-    image: Pr
+    image: Pr,
+    linkedIn: "#"
+  },
+  {
+    name: "Tanush Jain",
+    role: "Volunteer Management",
+    image: CommignSoon,
+    linkedIn: "https://www.linkedin.com/in/tanush-jain-17601321a/"
+  },
+  {
+    name: "Satyam",
+    role: "AIML",
+    image: CommignSoon,
+    linkedIn: "https://www.linkedin.com/in/satyam-gupta-41606a28a/"
   },
 ];
 
@@ -73,7 +94,8 @@ const OrganizersSection = () => {
         
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 reveal">
           {organizers.map((organizer, index) => (
-            <div
+            <a href={`${organizer.linkedIn}`}
+              target="_blank"
               key={index}
               className="flex flex-col items-center group w-36 md:w-44"
             >
@@ -92,7 +114,7 @@ const OrganizersSection = () => {
               </div>
               <h3 className="text-lg font-medium text-white text-center">{organizer.name}</h3>
               <p className="text-sm text-white/60 text-center mt-1">{organizer.role}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

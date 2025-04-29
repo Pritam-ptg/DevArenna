@@ -46,7 +46,7 @@ const AboutSection = () => {
                 "p-4 rounded-lg text-center",
                 "bg-gradient-to-b from-championGold/20 to-transparent"
               )}>
-                <div className="text-3xl font-bold text-white mb-1">₹1L+</div>
+                <div className="text-3xl font-bold text-white mb-1">₹15k+</div>
                 <div className="text-white/70 text-sm">Prize Pool</div>
               </div>
               
@@ -54,7 +54,7 @@ const AboutSection = () => {
                 "p-4 rounded-lg text-center",
                 "bg-gradient-to-b from-white/10 to-transparent"
               )}>
-                <div className="text-3xl font-bold text-white mb-1">20+</div>
+                <div className="text-3xl font-bold text-white mb-1">5+</div>
                 <div className="text-white/70 text-sm">Colleges</div>
               </div>
             </div>
