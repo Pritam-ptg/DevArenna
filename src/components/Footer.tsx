@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">DevArrena</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Dev Arena</h3>
             <p className="text-white/70 mb-6 max-w-sm">
               The ultimate test of skill, strategy, and survival. Do you have what it takes to emerge victorious?
             </p>
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-8 text-center text-white/60 text-sm">
-          <p>© 2024 DevArrena. All rights reserved.</p>
+          <p>© 2024 Dev Arena. All rights reserved.</p>
         </div>
       </div>
     </footer>

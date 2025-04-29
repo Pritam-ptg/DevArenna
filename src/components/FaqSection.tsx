@@ -78,7 +78,7 @@ const FaqSection = () => {
           </h2>
           
           <p className="text-lg text-white/80 font-squid max-w-3xl mx-auto">
-            Everything you need to know about the DevArrena event.
+            Everything you need to know about the Dev Arena event.
           </p>
         </div>
         

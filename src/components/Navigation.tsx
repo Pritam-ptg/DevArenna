@@ -35,7 +35,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <a href="#" className="text-white font-squid font-bold text-2xl">
-            <span className="text-squidPink">Dev</span>/Arrena
+            <span className="text-squidPink">Dev</span> / Arena
           </a>
           
           {/* Desktop navigation */}

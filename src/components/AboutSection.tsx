@@ -22,7 +22,7 @@ const AboutSection = () => {
           
           <div className="glass-card p-8 md:p-10 rounded-lg reveal">
             <p className="text-white/90 text-lg md:text-xl leading-relaxed">
-              <span className="text-squidPink font-semibold">DevArrena</span> is an adrenaline-fueled three-day extravaganza that combines the high-stakes intensity of Dev/Arrena with the glory of championship competition. Participants will navigate through a series of challenging technical puzzles, mind-bending games, and cultural showcases designed to test their limits. With elimination rounds reminiscent of the famous series but with a college-friendly twist, only the most skilled, strategic, and resilient competitors will survive to claim the ultimate prize and championship title. Are you ready to play?
+              <span className="text-squidPink font-semibold">Dev Arena</span> is an adrenaline-fueled three-day extravaganza that combines the high-stakes intensity of Dev/Arrena with the glory of championship competition. Participants will navigate through a series of challenging technical puzzles, mind-bending games, and cultural showcases designed to test their limits. With elimination rounds reminiscent of the famous series but with a college-friendly twist, only the most skilled, strategic, and resilient competitors will survive to claim the ultimate prize and championship title. Are you ready to play?
             </p>
             
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">

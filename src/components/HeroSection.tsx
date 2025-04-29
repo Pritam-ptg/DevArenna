@@ -92,7 +92,7 @@ const HeroSection = () => {
             MozOsxFontSmoothing: "grayscale"
           }}
         >
-          DEVARENA 2025
+          DEV / ARENA 2025
         </h1>
 
           <p className="text-xl md:text-2xl text-white/80 mb-8 tracking-wide">

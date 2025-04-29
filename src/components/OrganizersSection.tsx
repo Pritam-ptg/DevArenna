@@ -8,6 +8,7 @@ import k from "../assets/Karthik.jpeg"
 import Pr from "../assets/Pravitha.jpeg"
 import Deeksa from "../assets/Deekha.jpeg"
 import CommignSoon from "../assets/comingSoon.png"
+import Satyam from "../assets/Satyam.jpeg"
 
 const organizers = [
   {
@@ -67,7 +68,7 @@ const organizers = [
   {
     name: "Satyam",
     role: "AIML",
-    image: CommignSoon,
+    image: Satyam,
     linkedIn: "https://www.linkedin.com/in/satyam-gupta-41606a28a/"
   },
 ];
