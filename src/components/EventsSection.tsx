@@ -25,7 +25,7 @@ const EventsSection = () => {
       icon: <Brain className="h-6 w-6" />,
       description: "A fast-paced, Squid Game–inspired challenge where four teammates tackle four unpredictable rounds—ranging from tech and logic to the completely unexpected. Complete each task to unlock the next in a race against time. Adapt, survive, and sprint your way to victory!",
       color: "squidPink",
-      time: "10:00 AM - 12:00 PM",
+      time: "14th May 2025, 8:00 AM - 10:00 AM",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const EventsSection = () => {
       icon: <FileCode className="h-6 w-6" />,
       description: "A spine-chilling coding challenge where you can see either your keyboard or your screen—but never both! Test your muscle memory, logic, and instinct in this ultimate blind coding battle. Will you debug in the dark or emerge as the true ghost coder?",
       color: "squidGreen",
-      time: "01:00 PM - 03:00 PM",
+      time: "14th May 2025 , 12:00 PM - 02:00 PM",
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ const EventsSection = () => {
       icon: <Dice1 className="h-6 w-6" />,
       description: "Draw a card and dive into a challenge—🔴 Non-tech or 🔵 Tech, your fate is left to chance! Complete tasks against the clock to earn points. The more you conquer, the closer you get to victory. Are you ready to play your hand? ♠️",
       color: "championGold",
-      time: "03:30 PM - 05:30 PM",
+      time: "14th May 2025, 2:30 PM - 03:30 PM",
     },
     {
       id: 4,
@@ -52,7 +52,7 @@ const EventsSection = () => {
       icon: <Mic className="h-6 w-6" />,
       description: "Strategy meets stamina in this thrilling climb to victory! 🏛️ Complete tech puzzles and hands-on challenges to earn your way up each step of the iconic Rangasthala arena. Race to the top and claim the title of Rampage Champion! 🏆 Think fast, act faster, and ascend to glory!",
       color: "championSilver",
-      time: "06:00 PM - 08:00 PM",
+      time: "14th May 2025, 03:30 PM - 04:30 PM",
     },
     {
       id: 5,
@@ -61,7 +61,7 @@ const EventsSection = () => {
       icon: <Star className="h-6 w-6" />,
       description: "The ultimate talent showcase where participants bring their most spectacular skills to win over our judges and audience. What's your winning talent?",
       color: "squidPink",
-      time: "10:00 AM - 01:00 PM",
+      time: "15th May 2025, 10:00 AM - 01:00 PM",
     },
     {
       id: 6,
@@ -70,7 +70,7 @@ const EventsSection = () => {
       icon: <Users className="h-6 w-6" />,
       description: "Inspirational talks from industry leaders and innovators who've conquered their own games. Learn, network, and get motivated by the best.",
       color: "squidGreen",
-      time: "02:00 PM - 05:00 PM",
+      time: "02:00 PM - 04:00 PM",
     },
     {
       id: 7,
@@ -89,7 +89,7 @@ const EventsSection = () => {
       icon: <LayoutGrid className="h-6 w-6" />,
       description: "A life-sized, high-stakes version of the classic game where strategy meets physical challenge. Think fast, move faster, and outmaneuver your opponents.",
       color: "championGold",
-      time: "11:30 AM - 01:30 PM",
+      time: "16th May 2025, 11:30 AM - 2:00 PM",
     },
     {
       id: 9,
@@ -98,7 +98,7 @@ const EventsSection = () => {
       icon: <Lock className="h-6 w-6" />,
       description: "A high-speed battle of logic and deduction! 🧠 Teams of four race against time to decode statements, crack clues, and uncover hidden truths. Every second counts—can your team unravel the mystery before it’s too late? 🔐",
       color: "squidGreen",
-      time: "02:00 PM - 04:00 PM",
+      time: "16th May 2025, 02:30 PM - 04:00 PM",
     },
   ];
 
