@@ -9,6 +9,7 @@ import Pr from "../assets/Pravitha.jpeg"
 import Deeksa from "../assets/Deekha.jpeg"
 import CommignSoon from "../assets/comingSoon.png"
 import Satyam from "../assets/Satyam.jpeg"
+import Tanush from "../assets/Tanush.jpeg"
 
 const organizers = [
   {
@@ -33,7 +34,7 @@ const organizers = [
     name: "Vyishnavi",
     role: "Marketing Head",
     image: V,
-    linkedIn: "#"
+    linkedIn: "https://www.linkedin.com/in/vyshnavi-reddy-b1b670290"
   },
   {
     name: "Danush",
@@ -49,20 +50,20 @@ const organizers = [
   },
   {
     name: "Deeksha",
-    role: "Public Relations",
+    role: "Marketing",
     image:Deeksa,
     linkedIn: "https://www.linkedin.com/in/deeksha-shetti-51b9362a3/"
   },
   {
     name: "Pravitha",
-    role: "Public Relations",
+    role: "Finance",
     image: Pr,
-    linkedIn: "#"
+    linkedIn: "https://www.linkedin.com/in/pravitta-jeromie-506aab27b"
   },
   {
     name: "Tanush Jain",
-    role: "Volunteer Management",
-    image: CommignSoon,
+    role: "Operational",
+    image: Tanush,
     linkedIn: "https://www.linkedin.com/in/tanush-jain-17601321a/"
   },
   {
