@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Pritam from "..//assets/Pritam.jpeg"
+import Pritam from "..//assets/Pritam_7.jpeg"
 import Prerna from "../assets/Prerna.jpeg"
 import Aditya from "../assets/Aditya.jpeg"
 import V from "../assets/vyshnavi.jpeg"
@@ -9,7 +9,7 @@ import Pr from "../assets/Pravitha.jpeg"
 import Deeksa from "../assets/Deekha.jpeg"
 import CommignSoon from "../assets/comingSoon.png"
 import Satyam from "../assets/Satyam.jpeg"
-import Tanush from "../assets/Tanush.jpeg"
+import Tanush from "../assets/chuthiya.jpeg"
 
 const organizers = [
   {
