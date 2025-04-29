@@ -7,7 +7,7 @@ import D from "../assets/Danush.png"
 import k from "../assets/Karthik.jpeg"
 import Pr from "../assets/Pravitha.jpeg"
 import Deeksa from "../assets/Deekha.jpeg"
-import CommignSoon from "../assets/ComingSoon.png"
+import CommignSoon from "../assets/comingSoon.png"
 
 const organizers = [
   {

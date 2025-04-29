@@ -1,7 +1,7 @@
 
 import { cn } from "@/lib/utils";
 import Innoknowvew from "../assets/Innoknowvex.jpeg"
-import CommingSoon from "../assets/ComingSoon.png"
+import CommingSoon from "../assets/comingSoon.png"
 
 const sponsors = [
   {
